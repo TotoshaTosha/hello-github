@@ -1,2 +1,2 @@
 # hello-github
-my first repository
+my first repository with test code of chat bot 

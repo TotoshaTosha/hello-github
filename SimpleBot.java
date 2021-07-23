@@ -3,28 +3,30 @@ package bot;
 import java.util.Scanner;
 
 public class SimpleBot {
-    final static Scanner scanner = new Scanner(System.in); // Do not change this line
+    final static Scanner scanner = new Scanner(System.in); 
 
     public static void main(String[] args) {
-        greet("Alice", "2021"); // change it as you need
+        greet("Alice", "2021"); 
         remindName();
         guessAge();
         count();
         test();
         end();
     }
-
+    //greeting
     static void greet(String assistantName, String birthYear) {
         System.out.println("Hello! My name is " + assistantName + ".");
         System.out.println("I was created in " + birthYear + ".");
         System.out.println("Please, remind me your name.");
     }
-
+    
+    //asking about name
     static void remindName() {
         String name = scanner.nextLine();
         System.out.println("What a great name you have, " + name + "!");
     }
-
+    
+    //age riddle
     static void guessAge() {
         System.out.println("Let me guess your age.");
         System.out.println("Enter remainders of dividing your age by 3, 5 and 7.");
@@ -34,7 +36,8 @@ public class SimpleBot {
         int age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105;
         System.out.println("Your age is " + age + "; that's a good time to start programming!");
     }
-
+    
+    //counting to N numbers
     static void count() {
         System.out.println("Now I will prove to you that I can count to any number you want.");
         int num = scanner.nextInt();
@@ -42,7 +45,8 @@ public class SimpleBot {
             System.out.printf("%d!\n", i);
         }
     }
-
+    
+    //little task
     static void test() {
         System.out.println("Let's test your programming knowledge.");
         System.out.println("Why do we use methods?");
@@ -61,10 +65,10 @@ public class SimpleBot {
                 continue;
             }
         }
-        System.out.println("Congratulations, have a nice day!");
+       
     }
-
+    //ending
     static void end() {
-        System.out.println("Congratulations, have a nice day!"); // Do not change this text
+        System.out.println("Congratulations, have a nice day!"); 
     }
 }
